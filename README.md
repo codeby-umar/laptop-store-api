@@ -1,39 +1,43 @@
-# 💻 Laptop Store RESTful API
+# Laptop Store Enterprise API
 
-![API Banner](https://socialify.git.ci/your-username/laptop-store-api/image?description=Robust%20e-commerce%20backend%20for%20modern%20laptop%20retailers&font=Inter&name=1&owner=1&pattern=Circuit%20Board&theme=Dark)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/your-username/laptop-store-api)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.x-blue)](https://nodejs.org)
 
----
-
-## 🚀 Loyiha Haqida
-
-Ushbu loyiha zamonaviy noutbuklar do'koni uchun mo'ljallangan backend tizimi bo'lib, mahsulotlarni boshqarish, foydalanuvchi savatchasi va buyurtmalar tizimini to'liq qamrab oladi. Loyiha **Clean Architecture** va **REST** prinsiplari asosida qurilgan.
+High-performance, scalable RESTful API built with **Node.js** and **Clean Architecture** principles.
 
 ---
 
-## 🛠 Texnologiyalar
+## System Architecture
 
-* **Runtime:** Node.js (v18+)
-* **Framework:** Express.js
-* **Database:** MongoDB (Mongoose ODM)
-* **Auth:** JSON Web Tokens (JWT) & bcrypt.js
-* **Validation:** Joi yoki Zod
-* **Documentation:** Swagger UI (ixtiyoriy)
+The system follows a strict **Controller-Service-Repository** pattern to ensure separation of concerns and testability.
+
+<p align="center">
+  <img src="./assets/architecture-diagram.png" width="90%" alt="System Architecture" />
+</p>
 
 ---
 
-## 📂 Loyiha Strukturasi
+## 🛠 Tech Stack
 
-Loyiha tartibli va kengayishga qulay qilib tuzilgan:
+- **Runtime:** Node.js `v20.x`
+- **Framework:** Express.js (Strict Routing)
+- **Database:** MongoDB via Mongoose (Schema-based)
+- **Security:** JWT (Stateless Auth), Argon2/Bcrypt, Helmet, Rate Limiter
+- **Validation:** Zod (Type-safe validation)
+
+---
+
+## 📂 Project Blueprint
 
 ```text
-laptop-store-api/
-├── src/
-│   ├── controllers/    # API mantiqi (Request/Response)
-│   ├── models/         # Ma'lumotlar bazasi sxemalari
-│   ├── routes/         # API manzillari (Endpoints)
-│   ├── middleware/     # Auth va Xatolarni ushlash
-│   ├── config/         # DB va Atrof-muhit sozlamalari
-│   └── app.js          # Asosiy kirish nuqtasi
-├── assets/             # Loyiha rasmlari (diagrammalar)
-├── .env                # Maxfiy kalitlar
-└── package.json
+src/
+├── api/                # Application entry points
+│   ├── controllers/    # Request handling & orchestration
+│   ├── middlewares/    # Auth, Validation, Error Handling
+│   └── routes/         # Semantic versioned endpoints
+├── core/               # Business logic & Domain entities
+│   ├── services/       # Core business rules
+│   └── models/         # Data definitions
+├── shared/             # Utilities, Configs, Constants
+└── server.js           # Process management
