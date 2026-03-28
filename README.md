@@ -11,7 +11,7 @@ High-performance, scalable RESTful API built with **Node.js** and **Clean Archit
 The system follows a strict **Controller-Service-Repository** pattern to ensure separation of concerns and testability.
 
 <p align="center">
-  <img src="look.png" width="100%" alt="System Architecture" />
+  <img src="lesson.png" width="100%" alt="System Architecture" />
 </p>
 
 ---
