@@ -1,8 +1,6 @@
-# Laptop Store Enterprise API
-
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/your-username/laptop-store-api)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.x-blue)](https://nodejs.org)
+<p align="center">
+  <img src="look.png" width="100%" alt="System Architecture" />
+</p>
 
 High-performance, scalable RESTful API built with **Node.js** and **Clean Architecture** principles.
 
@@ -13,7 +11,7 @@ High-performance, scalable RESTful API built with **Node.js** and **Clean Archit
 The system follows a strict **Controller-Service-Repository** pattern to ensure separation of concerns and testability.
 
 <p align="center">
-  <img src="./assets/architecture-diagram.png" width="90%" alt="System Architecture" />
+  <img src="look.png" width="100%" alt="System Architecture" />
 </p>
 
 ---
