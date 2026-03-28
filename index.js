@@ -37,7 +37,7 @@ async function createBook() {
 async function getBooks(){
     const books = await Book.find({
         name : "Javascript va node js asoslari"
-    }).limit(1) // limit berib qoyish objectdan hozir 1 element olmoqda
+    }).limit(10) // limit berib qoyish objectdan hozir 1 element olmoqda
     .find({author : /^T/}) // mualifni ismi f boshlansa author ni olib beradi hammsaini
     .select({name : 1 , tags: 1})  // tanlab olsih objectni tanlab olish
     .or([{name : 'Javascript va node js asoslari'} , {isPublished : true}])
